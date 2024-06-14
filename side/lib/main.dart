@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-    nativeChannel = MethodChannel('id.co.example');
+    nativeChannel = const MethodChannel('id.co.example');
     nativeChannel.setMethodCallHandler(setHandler);
   }
 
@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
       title: 'Hello',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Hello from flutter'),
+          title: const Text('Hello from flutter'),
         ),
         body: Center(
           child: Text(data),
